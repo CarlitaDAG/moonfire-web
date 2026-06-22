@@ -826,4 +826,10 @@ html{
     font-size:14px;
 
 }
+.guardian button{
+    background:rgb(151, 104, 139) !important;
+    border:3px solid rgb(60, 43, 88) !important;
+    position:relative;
+    z-index:9999;
+}
 

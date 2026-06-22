@@ -95,3 +95,6 @@ function cerrarGuardian(){
 
 }
 alert("MoonFire JS cargado correctamente");
+function pruebaDragon(){
+    alert("🐉 Funciona");
+}
