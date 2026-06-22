@@ -94,3 +94,4 @@ function cerrarGuardian(){
     document.getElementById("modalGuardian").style.display = "none";
 
 }
+alert("MoonFire JS cargado correctamente");
