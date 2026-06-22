@@ -1,0 +1,501 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoonFire - Crónicas de MoonFire</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <h1 class="titulo-principal">🌙El Castillo Amatista</h1>
+    <h2>Crónicas de MoonFire</h2>
+    <p class="frase-principal">
+    Mientras los humanos heredan coronas,<br>
+    los dragones heredan memoria.
+</p>
+  
+<a href="#inicio" class="pergamino-btn" id="explorar">
+    📜 Explorar MoonFire
+</a>
+</header>
+
+
+
+<nav class="menu-principal">
+
+    <a href="#inicio">🏰 Inicio</a>
+
+    <a href="#libros">📚 Libros</a>
+
+    <a href="#reinos">🌙 Reinos</a>
+
+    <a href="#guardianes">🐉 Guardianes</a>
+
+    <a href="#blog">📜 Blog</a>
+
+    <a href="#autora">👩‍💻 Autora</a>
+
+
+</nav>
+
+
+
+<section id="inicio" class="bienvenida">
+
+    <h2 class="titulo-seccion">
+        🌙 Bienvenidos a MoonFire
+    </h2>
+
+    <p class="frase-moonfire">
+        Un continente donde los dragones guardan la memoria del pasado,
+        las coronas protegen antiguas promesas y cada reino forma parte
+        de una historia mucho más grande de lo que imagina.
+    </p>
+
+    <p class="texto-moonfire">
+
+        MoonFire es un continente formado por cinco grandes reinos,
+        unidos por pactos ancestrales y protegidos por los dragones guardianes.
+
+        Durante generaciones, la paz ha reinado sobre estas tierras.
+        Sin embargo, antiguas leyendas comienzan a despertar y secretos
+        olvidados amenazan con cambiar el destino de todos los reinos.
+
+        Bienvenido a una historia de dragones, coronas, amistad,
+        misterio y aventuras.
+
+    </p>
+
+</section>
+<section id="libros" class="saga">
+
+    <h2 class="titulo-seccion">
+        📚 Saga MoonFire
+    </h2>
+
+    <p class="descripcion-saga">
+        Cinco reinos. Cinco familias reales.
+        Cinco guardianes legendarios.
+        Una historia que conecta el destino de todo MoonFire.
+    </p>
+
+    <div class="contenedor-libros">
+
+        <div class="libro">
+             <img src="portadas/castillo-amatista.jpeg"
+         alt="El Castillo Amatista">
+            <h3>💜 El Castillo Amatista</h3>
+            <p>Libro I</p>
+            <button onclick="abrirLibroAmatista()">
+    Ver Libro
+</button>
+        </div>
+
+        <div class="libro">
+            <img src="portadas/reino-zafiro.jpeg"
+         alt="El Reino de Zafiro">
+            <h3>💙 El Reino de Zafiro</h3>
+            <p>Libro II</p>
+            <button>Ver Libro</button>
+        </div>
+
+        <div class="libro">
+            <img src="portadas/torre-diamantes.jpeg"
+         alt="La Torre de Diamantes">
+            <h3>💎 La Torre de Diamantes</h3>
+            <p>Libro III</p>
+            <button>Ver Libro</button>
+        </div>
+
+        <div class="libro">
+            <img src="portadas/imperio-esmeralda.jpeg"
+         alt="El Imperio Esmeralda">
+            <h3>💚 El Imperio Esmeralda</h3>
+            <p>Libro IV</p>
+            <button>Ver Libro</button>
+        </div>
+
+        <div class="libro">
+            <img src="portadas/corona-rubi.jpeg"
+         alt="La Corona de Rubí">
+            <h3>❤️ La Corona de Rubí</h3>
+            <p>Libro V</p>
+            <button>Ver Libro</button>
+        </div>
+
+    </div>
+
+</section>
+<section id="reinos" class="reinos">
+
+    <h2 class="titulo-seccion">
+        🌙 Los Cinco Reinos de MoonFire
+    </h2>
+
+    <p class="descripcion-reinos">
+        Cinco reinos unidos por antiguas alianzas, protegidos por dragones guardianes y marcados por valores que han guiado a sus pueblos durante generaciones.
+    </p>
+
+    <div class="contenedor-reinos">
+
+        <div class="reino amatista">
+            <h3>💜 Reino Amatista</h3>
+            <p>Casa Amethyst</p>
+            <blockquote>
+                "Las coronas pasan, las familias cambian, pero el amor que construye un reino permanece."
+            </blockquote>
+    <button onclick="abrirReino(
+    '💜 Reino Amatista',
+    'escudos/escudo-amethyst.jpg',
+    'familias/familia-amethyst.jpeg',
+    'mapas/mapa-amatista.jpeg',
+    '🐉 Dragón Guardián: Armonius'
+    )">
+    Explorar Reino
+    </button>
+        </div>
+
+        <div class="reino zafiro">
+            <h3>💙 Reino Zafiro</h3>
+            <p>Casa Sapphire</p>
+            <blockquote>
+                "El conocimiento es nuestra herencia, la lealtad nuestro juramento y la sabiduría nuestra guía."
+            </blockquote>
+            <button onclick="abrirReino(
+    '💙 Reino Zafiro',
+    'escudos/escudo-sapphire.jpeg',
+    'familias/familia-sapphire.jpeg',
+    'mapas/mapa-zafiro.jpg',
+    '🐉 Dragón Guardián: Zildakeel'
+    )">
+    Explorar Reino
+    </button>
+        </div>
+
+        <div class="reino diamante">
+            <h3>💎 Reino Diamante</h3>
+            <p>Casa Perl</p>
+            <blockquote>
+                "Así como el diamante refleja la luz más pura, nuestro linaje refleja la verdad."
+            </blockquote>
+            <button onclick="abrirReino(
+    '💎 Reino Diamante',
+    'escudos/escudo-perl.jpeg',
+    'familias/familia-perl.jpeg',
+    'mapas/mapa-diamante.jpg',
+    '🐉 Dragón Guardián: Octavelos'
+    )">
+    Explorar Reino
+    </button>
+        </div>
+
+        <div class="reino esmeralda">
+            <h3>💚 Reino Esmeralda</h3>
+            <p>Casa Emerald</p>
+            <blockquote>
+                "El verdadero poder de un imperio yace en la solidaridad con nuestros iguales."
+            </blockquote>
+            <button onclick="abrirReino(
+    '💚 Reino Esmeralda',
+    'escudos/escudo-emerald.jpeg',
+    'familias/familia-emerald.jpeg',
+    'mapas/mapa-esmeralda.jpg',
+    '🐉 Dragón Guardián: Splendore'
+    )">
+    Explorar Reino
+    </button>
+        </div>
+
+        <div class="reino rubi">
+            <h3>❤️ Reino Rubí</h3>
+            <p>Casa Ruby</p>
+            <blockquote>
+                "La pasión de un corazón es capaz de cambiar el destino de aquellos que sean valientes para buscarlo."
+            </blockquote>
+           <button onclick="abrirReino(
+    '❤️ Reino Rubí',
+    'escudos/escudo-ruby.jpeg',
+    'familias/familia-ruby.jpeg',
+    'mapas/mapa-rubi.jpg',
+    '🐉 Dragón Guardián: Ravellioff'
+    )">
+    Explorar Reino
+    </button>
+        </div>
+
+    </div>
+
+</section>
+<section id="guardianes" class="guardianes">
+
+    <h2 class="titulo-seccion">
+        🐉 Guardianes de MoonFire
+    </h2>
+
+    <p class="descripcion-guardianes">
+        Mucho antes de que existieran los reinos, los dragones ya surcaban los cielos de MoonFire. Tras la Gran Guerra, se convirtieron en los guardianes del continente y protectores de los pactos que mantienen la paz.
+    </p>
+
+    <div class="contenedor-guardianes">
+
+        <div class="guardian">
+            <img src="dragones/armonius.png" alt="Armonius">
+            <h3>💜 Armonius</h3>
+            <p>Guardián del Reino Amatista</p>
+            <button onclick="abrirGuardian(
+            '💜 Armonius',
+            'El Guardián de la Memoria',
+            'El más antiguo de los cinco guardianes. Paciente, reflexivo y profundamente admirado por los dragones. Conserva los recuerdos de MoonFire y cree firmemente en la esperanza de los humanos, especialmente en Spring Amethyst.',
+            'dragones/armonius.png'
+            )">Descubrir</button>
+        </div>
+
+        <div class="guardian">
+            <img src="dragones/zildakeel.png" alt="Zildakeel">
+            <h3>💙 Zildakeel</h3>
+            <p>Guardián del Reino Zafiro</p>
+            <button onclick="abrirGuardian(
+            '💙 Zildakeel',
+            'El Guardián de la Sabiduría',
+            'Imponente y silencioso. Aunque a veces cuestiona el antiguo pacto, su lealtad hacia MoonFire es inquebrantable. Reconoce un enorme potencial en Valentino Sapphire.',
+            'dragones/zildakeel.png'
+            )">Descubrir</button>
+        </div>
+
+        <div class="guardian">
+            <img src="dragones/octavelos.png" alt="Octavelos">
+            <h3>💎 Octavelos</h3>
+            <p>Guardián del Reino Diamante</p>
+            <button onclick="abrirGuardian(
+            '💎 Octavelos',
+            'El Guardián de la Verdad',
+            'El más joven de los guardianes. Calmado, observador y siempre dispuesto a decir aquello que los demás prefieren callar.',
+            'dragones/octavelos.png'
+            )">Descubrir</button>
+        </div>
+
+        <div class="guardian">
+            <img src="dragones/splendore.png" alt="Splendore">
+            <h3>💚 Splendore</h3>
+            <p>Guardiana del Reino Esmeralda</p>
+            <button onclick="abrirGuardian(
+            '💚 Splendore',
+            'La Guardiana de la Unión',
+            'Carismática y cercana a los humanos. Disfruta convivir con ellos, pero demuestra una firmeza inquebrantable cuando MoonFire está en peligro.',
+            'dragones/splendore.png'
+            )">Descubrir</button>
+        </div>
+
+        <div class="guardian">
+            <img src="dragones/ravellioff.png" alt="Ravellioff">
+            <h3>❤️ Ravellioff</h3>
+            <p>Guardián del Reino Rubí</p>
+            <button onclick="abrirGuardian(
+            '❤️ Ravellioff',
+            'El Guardián de la Pasión',
+            'Estricto y apasionado. Defiende el pacto con intensidad y cree que Rubina Ruby está destinada a encender una nueva era para MoonFire.',
+            'dragones/ravellioff.png'
+            )">Descubrir</button>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="blog" class="blog">
+
+    <h2 class="titulo-seccion">
+        📜 Crónicas de la Autora
+    </h2>
+
+    <p class="descripcion-blog">
+        Un espacio donde comparto avances de escritura, curiosidades, inspiración y secretos detrás de la creación de MoonFire.
+    </p>
+
+    <div class="contenedor-blog">
+
+        <div class="entrada-blog">
+            <h3>🏰 Cómo nació El Castillo Amatista</h3>
+            <p>
+                Los primeros bocetos del Reino Amatista y el origen de Spring Amethyst.
+            </p>
+        </div>
+
+        <div class="entrada-blog">
+            <h3>🐉 Creando a Armonius</h3>
+            <p>
+                El proceso de creación del guardián más antiguo de MoonFire.
+            </p>
+        </div>
+
+        <div class="entrada-blog">
+            <h3>📖 Avances de Escritura</h3>
+            <p>
+                Noticias sobre el progreso de El Castillo Amatista y futuros libros.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="autora" class="autora">
+
+    <h2 class="titulo-seccion">
+        👩‍💻 Sobre la Autora
+    </h2>
+
+    <div class="contenido-autora">
+
+        <div class="texto-autora">
+
+            <p>
+                ¡Hola! Soy Carlita DAG, autora de la Saga MoonFire.
+            </p>
+
+            <p>
+                Siempre me han apasionado las historias de fantasía, los dragones, los misterios y los mundos llenos de magia.
+            </p>
+
+            <p>
+                MoonFire nació como un sueño: crear un universo donde la amistad, la esperanza, los reinos y los dragones formaran parte de una misma historia.
+            </p>
+
+            <p>
+                Gracias por acompañarme en esta aventura.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="footer-moonfire">
+
+    <div class="footer-contenido">
+
+        <h2>🌙 MoonFire</h2>
+
+        <p class="frase-final">
+            Mientras los humanos heredan coronas,
+            los dragones heredan memoria.
+        </p>
+
+        <p class="credito">
+            Universo creado por <strong>Carlita DAG</strong>
+        </p>
+
+        <p class="saga">
+            Saga MoonFire
+        </p>
+
+        <p class="anio">
+            © 2026 • Todos los derechos reservados
+        </p>
+
+    </div>
+
+</footer>
+
+<div id="ventanaReino" class="modal">
+
+    <div class="contenido-modal">
+
+        <span class="cerrar" onclick="cerrarModal()">✖</span>
+
+        <h2 id="tituloReino"></h2>
+
+        <div class="contenido-reino">
+
+            <div>
+                <h3>🛡️ Escudo</h3>
+                <img id="escudoReino">
+            </div>
+
+            <div>
+                <h3>👑 Árbol Genealógico</h3>
+                <img id="arbolReino">
+            </div>
+
+            <div>
+                <h3>🗺️ Mapa</h3>
+                <img id="mapaReino">
+            </div>
+
+        </div>
+
+        <p id="dragonReino"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+
+<div id="libroAmatista" class="modal">
+
+    <div class="contenido-modal">
+
+        <span class="cerrar" onclick="cerrarLibro()">
+            ✖
+        </span>
+
+        <h2>📖 El Castillo Amatista</h2>
+
+        <p>
+            Durante siglos, el Reino Amatista ha vivido bajo la protección
+            de antiguos dragones guardianes...
+        </p>
+
+        <h3>Capítulos</h3>
+<a href="capitulos/profecia.html">
+    <button>✨ La Profecía</button>
+</a>
+<a href="capitulos/prologo.html">
+    <button>📜 Prólogo</button>
+</a>
+       <a href="capitulos/capitulo1.html">
+    <button>🌸 Capítulo 1 - Amanecer</button>
+</a>
+
+        <button>Capítulo 2 - Promesas</button>
+
+        <button>Capítulo 3 - Ecos</button>
+
+        <button>Capítulo 4 - Aliados</button>
+
+    </div>
+
+</div>
+<div id="modalGuardian" class="modal">
+
+    <div class="contenido-modal">
+
+        <span class="cerrar" onclick="cerrarGuardian()">
+            ✖
+        </span>
+
+        <h2 id="nombreGuardian"></h2>
+
+
+        <h3 id="tituloGuardian"></h3>
+
+        <p id="descripcionGuardian"></p>
+
+    </div>
+
+</div>
+
+</body>
+
+<div id="estrellas"></div>
+</html>

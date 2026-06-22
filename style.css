@@ -1,0 +1,829 @@
+
+body{
+
+    margin:0;
+
+    background:#12061f;
+
+    color:white;
+
+    font-family:Georgia, serif;
+
+}
+
+header{
+
+    text-align:center;
+
+    padding:80px;
+
+    background:linear-gradient(
+        #2f124d,
+        #12061f
+    );
+
+}
+
+h1{
+
+    color:#471481;
+
+    font-size:100px;
+
+}
+
+nav{
+
+    background:#2a103f;
+
+    text-align:center;
+
+    padding:15px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin:15px;
+
+}
+
+section{
+
+    padding:50px;
+
+}
+
+h2{
+
+    color:#5c3382;
+    font-size:40px;
+}
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    background:#2a103f;
+
+}
+header{
+    height:110vh;
+
+    background-image:url("imagenes/castillo-portada.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    text-align:center;
+}
+.frase-principal{
+
+    font-size: 40px;
+
+    font-style: italic;
+
+    color: #f3e8ff;
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+
+}
+.titulo-principal{
+
+    font-family: 'Cinzel Decorative', serif;
+
+    font-size: 80px;
+
+    color: #39155f;
+
+    text-align: center;
+
+    text-shadow:
+        0 0 10px #d8b4fe,
+        0 0 20px #c084fc,
+        0 0 40px #9333ea;
+
+}
+.pergamino-btn{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:15px 35px;
+
+    background:#e7d3a7;
+
+    color:#4b2c12;
+
+    text-decoration:none;
+
+    font-family:'Cinzel', serif;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    border:3px solid #8b6b3f;
+
+    border-radius:12px;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,0.4);
+
+    transition:0.3s;
+}
+
+.pergamino-btn:hover{
+
+    transform:scale(1.05);
+
+    background:#f4e4bc;
+
+    box-shadow:
+        0 0 15px #d6b36d;
+}
+.menu-principal{
+
+    background: rgba(30,10,50,0.95);
+
+    padding: 20px;
+
+    text-align: center;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    border-bottom: 2px solid #8b5cf6;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+
+}
+.menu-principal a{
+
+    color: #f3e8ff;
+
+    text-decoration: none;
+
+    margin: 0 20px;
+
+    font-family: 'Cinzel', serif;
+
+    font-size: 20px;
+
+    transition: 0.3s;
+
+}
+.menu-principal a:hover{
+
+    color: #d8b4fe;
+
+    text-shadow:
+        0 0 10px #c084fc,
+        0 0 20px #9333ea;
+
+}
+.bienvenida{
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 100px 50px;
+
+    text-align: center;
+
+}
+.titulo-seccion{
+
+    font-family: 'Cinzel Decorative', serif;
+
+    font-size: 50px;
+
+    color: #e9d5ff;
+
+    margin-bottom: 40px;
+
+    text-shadow:
+        0 0 10px #c084fc,
+        0 0 20px #9333ea;
+
+}
+.frase-moonfire{
+
+    font-family: 'Cinzel', serif;
+
+    font-size: 30px;
+
+    color: #d8b4fe;
+
+    line-height: 1.8;
+
+    margin-bottom: 40px;
+
+    font-style: italic;
+
+}
+.texto-moonfire{
+
+    font-size: 22px;
+
+    line-height: 1.9;
+
+    color: #f5f3ff;
+
+}
+.saga{
+
+    padding:100px 50px;
+
+    text-align:center;
+
+}
+.descripcion-saga{
+
+    font-size:22px;
+
+    max-width:900px;
+
+    margin:auto;
+
+    margin-bottom:60px;
+
+    color:#f3e8ff;
+
+}
+.contenedor-libros{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:30px;
+
+}
+.libro{
+
+    width:280px;
+
+    padding:25px;
+
+    background:rgba(255,255,255,0.05);
+
+    border:2px solid #8b5cf6;
+
+    border-radius:20px;
+
+    box-shadow:0 0 15px rgba(139,92,246,0.3);
+
+    transition:0.4s;
+
+}
+.libro:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 0 20px #a855f7,
+        0 0 40px #7e22ce;
+
+}
+.libro h3{
+
+    font-family:'Cinzel', serif;
+
+    color:#e9d5ff;
+
+}
+.libro button{
+
+    margin-top:15px;
+
+    padding:10px 20px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#8b5cf6;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-family:'Cinzel', serif;
+
+}
+.libro img{
+
+    width:100%;
+
+    height:380px;
+
+    object-fit: contain;
+
+    border-radius:15px;
+
+    margin-bottom:15px;
+
+}
+const boton = document.getElementById("explorar");
+
+boton.addEventListener("click", function() {
+
+    alert("Bienvenido a MoonFire 🌙🐉");
+
+});
+.libro img{
+
+    transition:0.5s;
+
+}
+
+.libro img:hover{
+
+    transform:scale(1.05);
+
+}
+html{
+
+    scroll-behavior:smooth;
+
+}
+.reinos{
+
+    padding:100px 50px;
+
+    text-align:center;
+
+}
+.descripcion-reinos{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    margin-bottom:60px;
+
+    font-size:22px;
+
+    color:#f3e8ff;
+
+}
+.contenedor-reinos{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:30px;
+
+}
+.reino{
+
+    width:320px;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    color:white;
+
+    transition:0.4s;
+
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+
+}
+.reino:hover{
+
+    transform:translateY(-10px);
+
+}
+.amatista{
+
+    background:linear-gradient(
+        #5b21b6,
+        #2e1065
+    );
+
+}
+
+.zafiro{
+
+    background:linear-gradient(
+        #2563eb,
+        #172554
+    );
+
+}
+
+.diamante{
+
+    background:linear-gradient(
+        #d1d5db,
+        #6b7280
+    );
+
+}
+
+.esmeralda{
+
+    background:linear-gradient(
+        #16a34a,
+        #14532d
+    );
+
+}
+
+.rubi{
+
+    background:linear-gradient(
+        #dc2626,
+        #7f1d1d
+    );
+
+}
+.reino blockquote{
+
+    font-style:italic;
+
+    margin:20px 0;
+
+    line-height:1.7;
+
+}
+.reino button{
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-family:'Cinzel', serif;
+
+}
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    z-index:999;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,0.8);
+
+}
+.contenido-modal{
+
+    background:#241038;
+
+    width:80%;
+
+    max-width:900px;
+
+    margin:40px auto;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    color:white;
+
+    overflow-y:auto;
+
+    max-height:90vh;
+
+}
+.cerrar{
+
+    float:right;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+}
+.contenido-modal img{
+
+    width:100%;
+
+    max-width:500px;
+
+    margin:20px auto;
+
+    display:block;
+
+    border-radius:15px;
+
+}
+.contenido-reino{
+
+    display:flex;
+
+    gap:20px;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    margin-top:30px;
+
+}
+.contenido-reino div{
+
+    flex:1;
+
+}
+.contenido-reino img{
+
+    width:100%;
+
+    border-radius:15px;
+
+}
+@media (max-width:768px){
+
+    .contenido-reino{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .contenido-reino div{
+
+        width:100%;
+
+    }
+
+}
+.lectura{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:60px;
+
+    line-height:2;
+
+    font-size:22px;
+
+}
+.lectura h1{
+
+    text-align:center;
+
+    color:#d8b4fe;
+
+}
+.lectura h2{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+.lectura p{
+
+    text-align:justify;
+
+}
+.guardianes{
+
+    padding:100px 50px;
+
+    text-align:center;
+
+}
+.descripcion-guardianes{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    margin-bottom:60px;
+
+    font-size:22px;
+
+}
+.contenedor-guardianes{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:30px;
+
+}
+.guardian{
+
+    width:300px;
+
+    padding:20px;
+
+    background:rgba(255,255,255,0.05);
+
+    border-radius:20px;
+
+    border:2px solid #8b5cf6;
+
+    transition:0.4s;
+
+}
+.guardian:hover{
+
+    transform:translateY(-10px);
+
+}
+.guardian img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+#imagenGuardian{
+
+    width:100%;
+
+    max-width:500px;
+
+    border-radius:20px;
+
+    margin-bottom:20px;
+
+}
+.blog{
+
+    padding:100px 50px;
+
+    text-align:center;
+
+}
+.descripcion-blog{
+
+    max-width:900px;
+
+    margin:auto;
+
+    margin-bottom:50px;
+
+    font-size:22px;
+
+}
+.contenedor-blog{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:30px;
+
+}
+.entrada-blog{
+
+    width:320px;
+
+    padding:25px;
+
+    background:rgba(255,255,255,0.05);
+
+    border:2px solid #8b5cf6;
+
+    border-radius:20px;
+
+}
+.autora{
+
+    padding:100px 50px;
+
+    text-align:center;
+
+}
+.contenido-autora{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+.texto-autora{
+
+    font-size:22px;
+
+    line-height:1.8;
+
+}
+.footer-moonfire{
+
+    margin-top:100px;
+
+    padding:80px 20px;
+
+    text-align:center;
+
+    background:linear-gradient(
+        #12061f,
+        #090312
+    );
+
+    border-top:2px solid #8b5cf6;
+
+}
+.footer-contenido h2{
+
+    font-family:'Cinzel Decorative', serif;
+
+    font-size:50px;
+
+    color:#d8b4fe;
+
+    margin-bottom:20px;
+
+}
+.frase-final{
+
+    font-family:'Cinzel', serif;
+
+    font-size:24px;
+
+    font-style:italic;
+
+    color:#f3e8ff;
+
+    margin-bottom:40px;
+
+}
+.credito{
+
+    font-family:'Cinzel', serif;
+
+    font-size:22px;
+
+    color:#ffffff;
+
+}
+.saga{
+
+    font-family:'Cinzel', serif;
+
+    font-size:18px;
+
+    letter-spacing:4px;
+
+    color:#c084fc;
+
+    margin-top:10px;
+
+}
+.anio{
+
+    margin-top:30px;
+
+    color:#a78bfa;
+
+    font-size:14px;
+
+}
+
